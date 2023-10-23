@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body id="arriba">
     <!-- Barra de navegacion -->
     <nav class="navbar bg-transparent fixed-top">
       <div class="container-fluid">
@@ -40,13 +40,19 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre mí </a>
+                <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" aria-current="page" href="#Experiencia">Experiencia </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" >
+                <a class="nav-link" href="#Proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certificaciones">Certificaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto" >
                   Contacto
                 </a>
               </li>
@@ -84,8 +90,8 @@
     </section>
 
     <!-- Experiencia -->
-    <div class="accordion accordion-flush" id="Experiencia">
-      <h2 class="seccion-titulo">Experiencia</h2>
+    <div class="accordion accordion-flush" >
+      <h2 class="seccion-titulo" id="Experiencia">Experiencia</h2>
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -143,7 +149,7 @@
 
     <!-- Proyectos -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <h2 class="seccion-titulo texto-negro text-center">Mis proyectos recientes</h2>
+      <h2 class="seccion-titulo texto-negro text-center" id="Proyectos">Mis proyectos recientes</h2>
       <h3 class="seccion-descripcion text-center">Estos son algunos proyectos que he creado recientemente...</h3>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -169,7 +175,7 @@
 
 
     <!-- Certificaciones -->
-    <section id="testimonios" class="testimonios seccion-clara">
+    <section id="certificaciones" class="testimonios seccion-clara">
       <h2 class="seccion-titulo">Credenciales digitales</h2>
       <h3 class="seccion-descripcion">Estos son algunas de mis certificaciones</h3>
       <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2827ea97-85a1-4759-873d-c7e0aca32b70" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
@@ -202,7 +208,7 @@
     
     <!-- Pie de pagina (footer) -->
     <footer class="seccion-footer d-flex flex-column align-items-center justify-content-center"> 
-      <img class="footer-logo" src="imagenes/Marisol Ramirez.png" alt="Logo del portafolio">
+      <a href="#arriba"><img class="footer-logo" src="imagenes/Marisol Ramirez.png" alt="Logo del portafolio"></a>
       <p class="footer-texto text-center">Aprendo todos los días.<br> Solo necesito una oportunidad.</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
         <a href="https://github.com/MarisolRamiCon" target="_blank" rel="noopener noreferrer">
